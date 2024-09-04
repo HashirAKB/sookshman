@@ -1,3 +1,4 @@
+// "use client"
 import { Box } from "lucide-react";
 import React from "react";
 import { ModeToggle } from "./ui/mode-toggle";
