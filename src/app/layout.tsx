@@ -3,11 +3,26 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner"
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sookshman",
   description: "Web based blockchain HD wallet",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/sookshman.svg",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/sookshman.svg",
+      media: "(prefers-color-scheme: dark)",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -21,6 +36,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Toaster/>
               {children}
+              <Footer/>
           </ThemeProvider>
         </body>
     </html>
