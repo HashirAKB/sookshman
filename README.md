@@ -26,8 +26,8 @@ Sookshman (meaning "protector" in Malayalam) is a powerful React app for generat
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/projekt-Sookshman.git
-   cd projekt-Sookshman
+   git clone https://github.com/HashirAKB/sookshman.git
+   cd sookshman
    ```
 
 2. Install dependencies:
