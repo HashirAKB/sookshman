@@ -8,6 +8,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sookshman",
   description: "Web based blockchain HD wallet",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/sookshman.svg",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/sookshman.svg",
+      media: "(prefers-color-scheme: dark)",
+    },
+  ],
 };
 
 export default function RootLayout({
